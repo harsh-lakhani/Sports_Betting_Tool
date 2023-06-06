@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Home Team Rating <= 5.85\nfriedman_mse = 0.2\nsamples = 2280\nvalue = 0.0", fillcolor="#f7dbc6"] ;
+1 [label="Away Team Rating <= 6.45\nfriedman_mse = 0.14\nsamples = 643\nvalue = 0.55", fillcolor="#f3c4a3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Away Team Possession % <= 49.5\nfriedman_mse = 0.25\nsamples = 130\nvalue = 0.27", fillcolor="#f5d0b5"] ;
+1 -> 2 ;
+3 [label="friedman_mse = 0.2\nsamples = 76\nvalue = 1.43", fillcolor="#eca16b"] ;
+2 -> 3 ;
+4 [label="friedman_mse = 0.22\nsamples = 54\nvalue = 0.1", fillcolor="#f7d7c0"] ;
+2 -> 4 ;
+5 [label="Home Team Rating <= 5.55\nfriedman_mse = 0.08\nsamples = 513\nvalue = 0.62", fillcolor="#f2c19e"] ;
+1 -> 5 ;
+6 [label="friedman_mse = 0.03\nsamples = 354\nvalue = 2.22", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="friedman_mse = 0.17\nsamples = 159\nvalue = 1.64", fillcolor="#ea995e"] ;
+5 -> 7 ;
+8 [label="Home Team Rating <= 6.05\nfriedman_mse = 0.06\nsamples = 1637\nvalue = -0.22", fillcolor="#f9e3d4"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Away Team Rating <= 6.15\nfriedman_mse = 0.23\nsamples = 177\nvalue = 0.08", fillcolor="#f7d7c1"] ;
+8 -> 9 ;
+10 [label="friedman_mse = 0.11\nsamples = 50\nvalue = -0.54", fillcolor="#fcf0e8"] ;
+9 -> 10 ;
+11 [label="friedman_mse = 0.25\nsamples = 127\nvalue = 0.59", fillcolor="#f3c3a1"] ;
+9 -> 11 ;
+12 [label="Away Team Rating <= 6.15\nfriedman_mse = 0.03\nsamples = 1460\nvalue = -0.25", fillcolor="#fae5d6"] ;
+8 -> 12 ;
+13 [label="friedman_mse = 0.01\nsamples = 1178\nvalue = -0.9", fillcolor="#ffffff"] ;
+12 -> 13 ;
+14 [label="friedman_mse = 0.11\nsamples = 282\nvalue = -0.52", fillcolor="#fcefe7"] ;
+12 -> 14 ;
+}
